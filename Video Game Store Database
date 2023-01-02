@@ -1,0 +1,26 @@
+CREATE TABLE video_game_store (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, rating TEXT, inventory INTEGER);
+
+INSERT INTO video_game_store VALUES (1, "Among Us", 4.99, "T", 4);
+INSERT INTO video_game_store VALUES (2, "Borderlands 2", 12.99, "M", 2);
+INSERT INTO video_game_store VALUES (3, "Monster Hunter Rise", 39.99, "M", 6);
+INSERT INTO video_game_store VALUES (4, "Stardew Valley", 14.99, "E", 4);
+INSERT INTO video_game_store VALUES (5, "New World", 39.99, "T", 5);
+INSERT INTO video_game_store VALUES (6, "Fall Guys", 19.99, "E", 2);
+INSERT INTO video_game_store VALUES (7, "The Witcher 3", 9.99, "M", 3);
+INSERT INTO video_game_store VALUES (8, "God of War", 29.99, "M", 7);
+INSERT INTO video_game_store VALUES (9, "Horizon Zero Dawn", 29.99, "T", 2);
+INSERT INTO video_game_store VALUES (10, "Cyberpunk 2077", 39.99, "M", 1);
+INSERT INTO video_game_store VALUES (11, "PGA TOUR 2K23", 59.99, "E", 10);
+INSERT INTO video_game_store VALUES (12, "Madden NFL 23", 59.99, "E", 9);
+INSERT INTO video_game_store VALUES (13, "FIFA 23", 59.99, "E", 6);
+INSERT INTO video_game_store VALUES (14, "Mario Kart 8 Deluxe", 59.99, "E", 4);
+INSERT INTO video_game_store VALUES (15, "The Legend of Zelda: Breath of the Wild", 49.99, "E", 2);
+
+--display the database ordered by price.
+SELECT * FROM video_game_store ORDER BY price;
+
+--how much total inventory is in the store.
+SELECT SUM(inventory) FROM video_game_store;
+
+--display how much invetory is available per E rated game.
+SELECT * FROM video_game_store WHERE rating = "E" ORDER BY inventory desc;
