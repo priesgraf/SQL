@@ -1,0 +1,105 @@
+First 2 rounds of 2018 NFL Draft 
+
+CREATE TABLE picks(
+id INTEGER PRIMARY KEY, 
+pick_number INTEGER, 
+player_name TEXT, 
+college TEXT, 
+selected_by TEXT, 
+position TEXT);
+
+INSERT INTO picks VALUES (1, 1, "Baker Mayfield", "Oklahoma", "Cleveland Browns", "QB");
+INSERT INTO picks VALUES (2, 2, "Saquon Barkley", "Penn State", "New York Giants", "RB"); 
+INSERT INTO picks VALUES (3, 3, "Sam Darnold", "USC", "New York Jets", "QB");
+INSERT INTO picks VALUES (4, 4, "Denzel Ward", "Ohio State", "Cleveland Browns", "CB");
+INSERT INTO picks VALUES (5, 5, "Bradley Chubb", "North Carolina State", "Denver Broncos", "DE");
+INSERT INTO picks VALUES (6, 6, "Quenton Nelson", "Notre Dame", "Indianapolis Colts", "OG");
+INSERT INTO picks VALUES (7, 7, "Josh Allen", "Wyoming", "Buffalo Bills", "QB");
+INSERT INTO picks VALUES (8, 8, "Roquan Smith", "Georgia", "Chicago Bears", "ILB");
+INSERT INTO picks VALUES (9, 9, "Mike McGlinchey", " Notre Dame", "San Francisco 49ers", "OT");
+INSERT INTO picks VALUES (10, 10, "Josh Rosen", "UCLA", "Arizona Cardinals", "QB");
+INSERT INTO picks VALUES (11, 11, "Minkah Fitzpatrick", "Alabama", "Miami Dolphins", "S");
+INSERT INTO picks VALUES (12, 12, "Vita Vea", "Washington", "Tampa Bay Buccaneers", "DT");
+INSERT INTO picks VALUES (13, 13, "Daron Payne", "Alabama", "Washington Commanders", "DT");
+INSERT INTO picks VALUES (14, 14, "Marcus Davenport", "Texas-San Antonio", "New Orleans Saints", "DE");
+INSERT INTO picks VALUES (15, 15, "Kolton Miller", "UCLA", "Las Vegas Raiders", "OT");
+INSERT INTO picks VALUES (16, 16, "Tremaine Edmunds", "Virginia Tech", "Buffalo Bills", "ILB");
+INSERT INTO picks VALUES (17, 17, "Derwin James", "Florida State", "Los Angeles Chargers", "S");
+INSERT INTO picks VALUES (18, 18, "Jaire Alexander", "Louisville", "Green Bay Packers", "CB");
+INSERT INTO picks VALUES (19, 19, "Leighton Vander Esch", "Boise State", "Dallas Cowboys", "ILB");
+INSERT INTO picks VALUES (20, 20, "Frank Ragnow", "Arkansas", "Detroit Lions", "C");
+INSERT INTO picks VALUES (21, 21, "Billy Price", "Ohio State", "Cincinatti Bengals", "C");
+INSERT INTO picks VALUES (22, 22, "Rashaad Evans", "Alabama", "Tennessee Titans", "ILB");
+INSERT INTO picks VALUES (23, 23, "Isaiah Wynn", "Georgia", "New England Patriots", "OT");
+INSERT INTO picks VALUES (24, 24, "D.J. Moore", " Maryland", "Carolina Panthers", "WR");
+INSERT INTO picks VALUES (25, 25, "Hayden Hurst", "South Carolina", "Baltimore Ravens", "TE");
+INSERT INTO picks VALUES (26, 26, "Calvin Ridley", "Alabama", "Atlanta Falcons", "WR");
+INSERT INTO picks VALUES (27, 27, "Rashaad Penny", "San Diego State", "Seattle Seahawks", "RB");
+INSERT INTO picks VALUES (28, 28, "Terrell Edmunds", "Virginia Tech", "Pittsburgh Steelers", "S");
+INSERT INTO picks VALUES (29, 29, "Taven Bryan", "Florida", "Jacksonville Jaguars", "DT");
+INSERT INTO picks VALUES (30, 30, "Mike Hughes", "Central Florida", "Minnesota Vikings", "CB");
+INSERT INTO picks VALUES (31, 31, "Sony Michel", "Georgia", "New England Patriots", "RB");
+INSERT INTO picks VALUES (32, 32, "Lamar Jackson", "Louisville", "Baltimore Ravens", "QB");
+INSERT INTO picks VALUES (33, 33, "Austin Corbett", "Nevada", "Cleveland Browns", "C");
+INSERT INTO picks VALUES (34, 34, "Will Hernandez", "Texas-El Paso", "New York Giants", "OG");
+INSERT INTO picks VALUES (35, 35, "Nick Chubb", "Georgia", "Cleveland Browns", "RB");
+INSERT INTO picks VALUES (36, 36, "Shaquille Leonard", "South Carolina State", "Indianapolis Colts", "LB");
+INSERT INTO picks VALUES (37, 37, "Braden Smith", "Auburn", "Indianapolis Colts", "OG");
+INSERT INTO picks VALUES (38, 38, "Ronald Jones II", "USC", "Tampa Bay Buccaneers", "RB");
+INSERT INTO picks VALUES (39, 39, "James Daniels", "Iowa", "Chicago Bears", "C");
+INSERT INTO picks VALUES (40, 40, "Courtland Sutton", "SMU", "Denver Broncos", "WR");
+INSERT INTO picks VALUES (41, 41, "Harold Landry", "Boston College", "Tennessee Titans", "OLB");
+INSERT INTO picks VALUES (42, 42, "Mike Gesicki", "Penn State", "Miami Doplhins", "TE");
+INSERT INTO picks VALUES (43, 43, "Kerryon Johnson", "Auburn", "Detroit Lions", "RB");
+INSERT INTO picks VALUES (44, 44, "Dante Pettis", "Washington", "San Francisco 49ers", "WR");
+INSERT INTO picks VALUES (45, 45, "Josh Jackson", "Iowa", "Green Bay Packers", "CB");
+INSERT INTO picks VALUES (46, 46, "Breeland Sparks", "Mississippi", "Kansas City", "DE");
+INSERT INTO picks VALUES (47, 47, "Christian Kirk", "Texas A&M", "Arizona Cardinals", "WR");
+INSERT INTO picks VALUES (48, 48, "Uchenna Nwosu", "USC", "Los Angeles Chargers", "OLB");
+INSERT INTO picks VALUES (49, 49, "Dallas Goedert", "South Dakota State", "Philadelphia Eagles", "TE");
+INSERT INTO picks VALUES (50, 50, "Connor Williams", "Texas", "Dallas Cowboys", "OT");
+INSERT INTO picks VALUES (51, 51, "Anthony Miller", "Memphis", "Chicago Bears", "WR");
+INSERT INTO picks VALUES (52, 52, "Kemoko Turay", "Rutgers", "Indianapolis Colts", "OLB");
+INSERT INTO picks VALUES (53, 53, "M.J. Stewart", "North Carolina", "Tampa Bay", "CB");
+INSERT INTO picks VALUES (54, 54, "Jessie Bates III", "Wake Forest", "Cincinatti Bengals", "S");
+INSERT INTO picks VALUES (55, 55, "Donte Jackson", "LSU", "Carolina Panthers", "CB");
+INSERT INTO picks VALUES (56, 56, "Duke Dawson", "Florida", "New England Patriots", "CB");
+INSERT INTO picks VALUES (57, 57, "P.J. Hall", "Sam Houston State", "Las Vegas Raiders", "DT");
+INSERT INTO picks VALUES (58, 58, "Isaiah Oliver", "Colorado", "Atlanta Falcons", "CB");
+INSERT INTO picks VALUES (59, 59, "Derrius Guice", "LSU", "Washinton Commanders", "RB");
+INSERT INTO picks VALUES (60, 60, "James Washington", "Oklahoma State", "Pittsburgh Steelers", "WR");
+INSERT INTO picks VALUES (61, 61, "DJ Chark", "LSU", "Jacksonville Jaguars", "WR");
+INSERT INTO picks VALUES (62, 62, "Brian O'Neill", "Pittsburgh", "Minnesota Vikings", "OT");
+INSERT INTO picks VALUES (63, 63, "Carlton Davis", "Auburn", "Tampa Bay Buccaneers", "CB");
+INSERT INTO picks VALUES (64, 64, "Tyquan Lewis", "Ohio State", "Indianapolis Colts", "DE");
+
+--2018 NFL Draft in order of pick
+SELECT pick_number, player_name, college, selected_by, position FROM picks;
+
+--total number of each position taken
+SELECT position, COUNT(position) FROM picks 
+GROUP BY position
+ORDER BY COUNT(position) desc;
+
+--total number of players taken from each college
+SELECT college, COUNT(college) FROM picks
+GROUP by college
+ORDER BY COUNT(college) desc;
+
+--Players taken from Alabama and Georgia and what draft pick they were taken with
+SELECT pick_number, player_name, college FROM picks WHERE college = "Alabama" OR college = "Georgia"
+Order BY college;
+
+--Players taken differentiated by draft round
+SELECT player_name,
+CASE
+    WHEN pick_number < 33 then "first"
+    ELSE "second"
+    END "round"
+    FROM picks;
+
+--Average pick of position taken
+SELECT position, AVG(pick_number) AS avg_pick FROM picks
+GROUP BY position
+HAVING avg_pick < 33;
+ORDER BY avg_pick;
