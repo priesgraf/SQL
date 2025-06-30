@@ -1,4 +1,4 @@
-First 2 rounds of 2018 NFL Draft 
+---This project utilizes the data of the 2018 NFL Draft: 
 
 CREATE TABLE picks(
 id INTEGER PRIMARY KEY, 
@@ -73,24 +73,24 @@ INSERT INTO picks VALUES (62, 62, "Brian O'Neill", "Pittsburgh", "Minnesota Viki
 INSERT INTO picks VALUES (63, 63, "Carlton Davis", "Auburn", "Tampa Bay Buccaneers", "CB");
 INSERT INTO picks VALUES (64, 64, "Tyquan Lewis", "Ohio State", "Indianapolis Colts", "DE");
 
---2018 NFL Draft in order of pick
+---NFL Draft in order of pick
 SELECT pick_number, player_name, college, selected_by, position FROM picks;
 
---total number of each position taken
+---Total number of each position taken
 SELECT position, COUNT(position) FROM picks 
 GROUP BY position
 ORDER BY COUNT(position) desc;
 
---total number of players taken from each college
+---Total number of players taken from each college
 SELECT college, COUNT(college) FROM picks
 GROUP by college
 ORDER BY COUNT(college) desc;
 
---Players taken from Alabama and Georgia and what draft pick they were taken with
+---Players taken from Alabama and Georgia and what draft pick they were taken with
 SELECT pick_number, player_name, college FROM picks WHERE college = "Alabama" OR college = "Georgia"
 Order BY college;
 
---Players taken differentiated by draft round
+---Players taken differentiated by draft round
 SELECT player_name,
 CASE
     WHEN pick_number < 33 then "first"
@@ -98,8 +98,7 @@ CASE
     END "round"
     FROM picks;
 
---Average pick of position taken
-SELECT position, AVG(pick_number) AS avg_pick FROM picks
+---Average pick of position taken
+SELECT position, ROUND(AVG(pick_number),2) AS avg_pick FROM picks
 GROUP BY position
-HAVING avg_pick < 33;
 ORDER BY avg_pick;
